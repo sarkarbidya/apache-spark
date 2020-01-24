@@ -45,6 +45,7 @@ package object sql {
 
   type DataFrame = Dataset[Row]
 
+  type SecureDataFrame = SecureDataset[Row]
   /**
    * Metadata key which is used to write Spark version in the followings:
    * - Parquet file metadata
