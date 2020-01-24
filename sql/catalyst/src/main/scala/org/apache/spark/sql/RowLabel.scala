@@ -43,6 +43,7 @@ case class RowLabel(rowLabel : HashMap[Owner, Reader] ) extends Label{
       }
   }
 
+
   def doUnion(tableLabel : HashMap[Owner,Reader]) : HashMap[Owner,Reader] = {
     var tableOwnerSet = tableLabel.keySet
     var labelOwnerSet = rowLabel.keySet
